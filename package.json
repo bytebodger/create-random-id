@@ -1,0 +1,59 @@
+{
+  "name": "@toolz/create-random-id",
+  "version": "1.0.0",
+  "description": "A simple utility to generate random IDs",
+  "keywords": [
+    "random",
+    "ID",
+    "javascript",
+    "identifier",
+    "string",
+    "alphanumeric"
+  ],
+  "homepage": "https://github.com/bytebodger/create-random-id",
+  "bugs": {
+    "email": "adam.davis@hashverify.com",
+    "url": "https://github.com/bytebodger/create-random-id/issues"
+  },
+  "main": "src/create.random.id.js",
+  "scripts": {
+    "local": "nodemon --experimental-modules --es-module-specifier-resolution=node src/create.random.id.js",
+    "start": "node --experimental-modules --es-module-specifier-resolution=node src/create.random.id.js",
+    "test": "jest --transformIgnorePatterns \"node_modules/(?!@toolz/create-random-id)/\" --env=jsdom"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bytebodger/create-random-id.git"
+  },
+  "author": "Adam Nathaniel Davis <adam.davis@hashverify.com> (https://writing.voyage)",
+  "license": "MIT",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.1",
+    "@babel/node": "^7.10.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.13.0",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.12.13",
+    "babel-jest": "^26.6.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-jest": "^26.6.2",
+    "jest": "^26.6.3",
+    "jest-cli": "^26.6.3",
+    "jest-matcher-one-of": "^1.0.2",
+    "nodemon": "^2.0.4"
+  },
+  "browserslist": [
+    "last 1 chrome version",
+    "last 1 firefox version",
+    "last 1 safari version",
+    "last 1 ie version"
+  ],
+  "dependencies": {
+    "@toolz/allow": "^1.0.8"
+  }
+}
