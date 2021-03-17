@@ -1,6 +1,6 @@
 # create-random-id
 
-`create-random-id` is a tiny utilityt function to generate random IDs (strings). It uses `Math.random()`, and as such, it provides no level of cryptographic security. But it should be perfectly fine whenever you simply need to generate a pseudo-random string.
+`create-random-id` is a tiny utility function to generate random IDs (strings). It uses `Math.random()`, and as such, it provides no level of cryptographic security. But it should be perfectly fine whenever you simply need to generate a pseudo-random string.
 
 ## Usage
 
