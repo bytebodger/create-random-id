@@ -62,3 +62,13 @@ test('createRandomId(32, true, true, false), it generates a 32-character ID, sta
    expect(!!id.match(/[a-z]/)).toEqual(true);
    expect(!!id.match(/[0-9]/)).toEqual(false);
 });
+
+test('createRandomId(100_000, true, true, false), uses all ten numeric digits at least once', () => {
+   const stats = {};
+   const id = createRandomId(100_000, false, false, true);
+   for (let i = 0; i < id.length; i++) {
+      const ch = id.charAt(i);
+      stats[ch] = (stats[ch] || 0) + 1;
+   }
+   expect(Object.keys(stats)).toHaveLength(10);
+});
