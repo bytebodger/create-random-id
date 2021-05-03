@@ -28,10 +28,10 @@ export const createRandomId = (length = 32, useUppercaseLetters = true, useLower
    let id = '';
    for (let i = 0; i < length; i++) {
       if (i === 0 && letters.length > 0) {
-         let randomNumber = Math.floor(Math.random() * (letters.length));
+         let randomNumber = Math.floor(Math.random() * letters.length);
          id += letters[randomNumber];
       } else {
-         let randomNumber = Math.floor(Math.random() * (characters.length));
+         let randomNumber = Math.floor(Math.random() * characters.length);
          id += characters[randomNumber];
       }
    }
